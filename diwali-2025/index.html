@@ -10,14 +10,34 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     body {
       font-family: 'Inter', sans-serif;
-      background: #fdfaf5;
+      background: #5B0C27;
     }
+    
+    .schedule-card {
+      background-color: #8D183B;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      border: 1px solid #FFC000;
+      transition: transform 0.3s;
+    }
+    .schedule-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Custom classes for the new color scheme */
+    .bg-dark-maroon { background-color: #5B0C27; }
+    .text-gold { color: #FFC000; }
+    .bg-light-maroon { background-color: #8D183B; }
+    .text-light-gold { color: #FFD700; }
+    .border-gold { border-color: #FFC000; }
   </style>
 </head>
-<body class="bg-amber-50">
+<body class="bg-dark-maroon text-white">
 
   <!-- Top Contact Banner -->
-  <div class="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-center py-2 px-4 rounded-b-xl shadow-lg">
+  <div class="bg-light-maroon text-white text-center py-2 px-4 rounded-b-xl shadow-lg">
     <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm font-semibold">
       <span class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -33,8 +53,8 @@
   </div>
 
   <!-- Header Section -->
-  <header class="bg-gradient-to-r from-orange-400 to-yellow-400 text-white text-center py-10 px-4 rounded-3xl shadow-2xl mt-4 mx-4 sm:mx-8 md:mx-12 lg:mx-20">
-    <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-2 leading-tight tracking-wide">
+  <header class="bg-light-maroon text-white text-center py-10 px-4 rounded-3xl shadow-2xl mt-4 mx-4 sm:mx-8 md:mx-12 lg:mx-20 border-gold border-2">
+    <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-2 leading-tight tracking-wide text-gold">
       <span class="inline-block animate-pulse">🌟</span> Diwali Celebration – Festival of Lights <span class="inline-block animate-pulse">🌟</span>
     </h1>
     <p class="text-lg sm:text-xl font-medium opacity-90 mb-4">
@@ -50,93 +70,135 @@
 
   <main class="container mx-auto px-4 sm:px-8 py-12">
 
-    <!-- Event Performances Section -->
+    <!-- Event Schedule Section -->
     <section class="mb-12">
-      <h2 class="text-3xl sm:text-4xl font-bold text-orange-600 mb-6">
-        🎭 Event Performances
+      <h2 class="text-3xl sm:text-4xl font-bold text-gold mb-6">
+        🗓️ Event Schedule
       </h2>
-      <p class="text-gray-600 text-lg mb-8 italic">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+        <!-- Schedule Item 1 -->
+        <div class="schedule-card flex flex-col justify-start text-center">
+          <h3 class="text-xl font-bold text-light-gold mb-2">Welcome & Mingle</h3>
+          <p class="text-white text-sm flex-grow">
+            Arrive and mingle with friends and family. Enjoy the showcase of artwork submitted from pre-event activities.
+          </p>
+        </div>
+        
+        <!-- Schedule Item 2 -->
+        <div class="schedule-card flex flex-col justify-start text-center">
+          <h3 class="text-xl font-bold text-light-gold mb-2">Cultural Performances</h3>
+          <p class="text-white text-sm flex-grow">
+            Enjoy a lineup of dance, singing, and drama performances showcasing the incredible talent within our community.
+          </p>
+        </div>
+
+        <!-- Schedule Item 3 -->
+        <div class="schedule-card flex flex-col justify-start text-center">
+          <h3 class="text-xl font-bold text-light-gold mb-2">Delicious Food</h3>
+          <p class="text-white text-sm flex-grow">
+            Indulge in a delicious array of traditional Indian dishes and festival treats.
+          </p>
+        </div>
+        
+        <!-- Schedule Item 4 -->
+        <div class="schedule-card flex flex-col justify-start text-center">
+          <h3 class="text-xl font-bold text-light-gold mb-2">Family Sparklers Lighting</h3>
+          <p class="text-white text-sm flex-grow">
+            Create a dazzling atmosphere with a magical family sparkler lighting display.
+          </p>
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <!-- Cultural Performances Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gold mb-6">
+        🎭 Cultural Performances
+      </h2>
+      <p class="text-gray-400 text-lg mb-8 italic">
         Entries need to be submitted before 5th October 2025
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
         <!-- Performance Card 1 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <div class="text-5xl mb-4">✨</div>
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Incredible India - Family Ramp Walk</h3>
-            <p class="text-gray-700">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <div class="text-5xl mb-4 text-gold">✨</div>
+          <h3 class="text-xl font-bold text-light-gold mb-2">Incredible India - Family Ramp Walk</h3>
+            <p class="text-white flex-grow">
               We are excited to invite you to participate a special cultural event for adults this Diwali. This showcase brings together the traditions, music, dance, and folk arts of our nation's many states, highlighting the beauty of our customs and traditional dress.
               <br><br>
               This is a wonderful opportunity for each of us to represent our home state and bring its culture to life. Your participation will make this celebration truly memorable. If you're interested in joining, please let us know—your involvement will add immense value to this incredible event!
           </p>
         </div>
         <!-- Performance Card 2 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <div class="text-5xl mb-4">🎭</div>
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Dashavataram</h3>
-          <p class="text-gray-700">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <div class="text-5xl mb-4 text-gold">🎭</div>
+          <h3 class="text-xl font-bold text-light-gold mb-2">Dashavataram</h3>
+          <p class="text-white flex-grow">
             A powerful dramatic performance portraying the ten incarnations of Lord Vishnu. We invite you to bring this tradition to life with energy, grace, and devotion on stage!
           </p>
         </div>
         <!-- Performance Card 3 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <div class="text-5xl mb-4">💃</div>
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Dancing</h3>
-          <p class="text-gray-700">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <div class="text-5xl mb-4 text-gold">💃</div>
+          <h3 class="text-xl font-bold text-light-gold mb-2">Dancing</h3>
+          <p class="text-white flex-grow">
             Share your talent on stage! We invite all members to fill the stage with rhythm, color, and festive joy.
           </p>
         </div>
         <!-- Performance Card 4 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <div class="text-5xl mb-4">🎤</div>
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Singing</h3>
-          <p class="text-gray-700">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <div class="text-5xl mb-4 text-gold">🎤</div>
+          <h3 class="text-xl font-bold text-light-gold mb-2">Singing</h3>
+          <p class="text-white flex-grow">
             Lend your voice to the festivities! We invite all members to perform soulful melodies and vibrant songs that will lift everyone's mood and spread cheer.
           </p>
         </div>
         <!-- Performance Card 5 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <div class="text-5xl mb-4">🎬</div>
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Drama</h3>
-          <p class="text-gray-700">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <div class="text-5xl mb-4 text-gold">🎬</div>
+          <h3 class="text-xl font-bold text-light-gold mb-2">Drama</h3>
+          <p class="text-white flex-grow">
             Do you have a story to tell? We welcome creative and powerful dramatic performances that bring emotions to life and connect our community to tradition and culture.
           </p>
         </div>
       </div>
     </section>
-
+    
     <!-- Pre-Event Activities Section -->
     <section>
-      <h2 class="text-3xl sm:text-4xl font-bold text-orange-600 mb-6">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gold mb-6">
         🎨 Pre-Event Activities
       </h2>
-      <p class="text-gray-600 text-lg mb-8 italic">
+      <p class="text-gray-400 text-lg mb-8 italic">
         All artwork must be submitted one week before the event day so it can be showcased on the 8th Nov 2025
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
         <!-- Activity Card 1 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <h3 class="text-xl font-bold text-amber-600 mb-2 flex items-center">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <h3 class="text-xl font-bold text-light-gold mb-2 flex items-center">
             <span class="text-3xl mr-2">🪔</span> Diya Painting
           </h3>
-          <p class="text-gray-700">
+          <p class="text-white flex-grow">
             Paint beautiful clay lamps (diyas) that light up Diwali. Children and adults alike can express their creativity with colors and patterns to brighten the celebration.
           </p>
         </div>
         <!-- Activity Card 2 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <h3 class="text-xl font-bold text-amber-600 mb-2 flex items-center">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <h3 class="text-xl font-bold text-light-gold mb-2 flex items-center">
             <span class="text-3xl mr-2">🖍️</span> Drawing
           </h3>
-          <p class="text-gray-700">
+          <p class="text-white flex-grow">
             Kids and participants bring their imagination to life through Diwali-themed drawing competitions. From rangolis to festive scenes, every sketch adds color to the event.
           </p>
         </div>
         <!-- Activity Card 3 -->
-        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
-          <h3 class="text-xl font-bold text-amber-600 mb-2 flex items-center">
+        <div class="bg-light-maroon text-white p-6 rounded-3xl shadow-xl border border-gold transition-transform transform hover:scale-105 duration-300 flex flex-col justify-start">
+          <h3 class="text-xl font-bold text-light-gold mb-2 flex items-center">
             <span class="text-3xl mr-2">🏮</span> Lantern Making
           </h3>
-          <p class="text-gray-700">
+          <p class="text-white flex-grow">
             Create glowing handmade lanterns in this fun and crafty activity. A perfect way to celebrate the Festival of Lights while adding your own creative touch to the décor.
           </p>
         </div>
@@ -145,7 +207,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-6 mt-12 px-4 rounded-t-xl">
+  <footer class="bg-light-maroon text-gold text-center py-6 mt-12 px-4 rounded-t-xl border-t-2 border-gold">
     <p class="text-lg font-semibold">✨ Celebrate Diwali with us – Lights, Culture, and Joy! ✨</p>
   </footer>
 
@@ -154,7 +216,7 @@
       // Define the event details
       const event = {
         title: 'Diwali Celebration – Festival of Lights',
-        description: 'Join us for an evening of lights, culture, and creativity! The event features family ramp walks, dance, singing, drama, and pre-event activities like diya painting, drawing, and lantern making.',
+        description: 'Join us for an evening of lights, culture, and creativity! The event features a schedule of welcome, cultural performances, family sparklers, and delicious food.',
         start: '2025-11-08T16:00:00',
         end: '2025-11-08T22:00:00', // Assuming the event runs for a few hours
       };
