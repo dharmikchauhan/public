@@ -18,6 +18,7 @@
       text-align: center;
       padding: 0.5rem;
       font-size: 1rem;
+      word-wrap: break-word;
     }
     .top-banner a {
       color: white;
@@ -72,6 +73,25 @@
       padding: 1rem;
       margin-top: 1.5rem;
       font-size: 1rem;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .top-banner {
+        font-size: 0.9rem;
+      }
+      .activity {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
