@@ -12,6 +12,19 @@
       margin: 0;
       padding: 0;
     }
+    .top-banner {
+      background: #ff6600;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    .top-banner a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
     header {
       background: linear-gradient(90deg, #ff9933, #ff6600);
       color: white;
@@ -25,7 +38,7 @@
     }
     main {
       padding: 2rem 1rem;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
@@ -35,12 +48,17 @@
       margin: 1.5rem 0 1rem;
       font-size: 1.5rem;
     }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
     .activity {
-      margin-bottom: 1.5rem;
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.08);
       padding: 1rem 1.5rem;
+      text-align: center;
     }
     h3 {
       margin-top: 0;
@@ -58,6 +76,14 @@
   </style>
 </head>
 <body>
+  <div class="top-banner">
+    📞 Contact: 
+    <a href="tel:0420843188">Lavanya (0420843188)</a> |
+    <a href="tel:0480174996">Sirisha (0480174996)</a> |
+    <a href="tel:0488734641">Kalpana (0488734641)</a> |
+    <a href="tel:0414214977">Prasad (0414214977)</a>
+  </div>
+
   <header>
     <h1>🌟 Diwali Celebration – Festival of Lights 🌟</h1>
     <p>Join us for an evening of lights, culture, and creativity!</p>
@@ -65,47 +91,45 @@
 
   <main>
     <h2>🎭 Event Performances</h2>
-
-    <div class="activity">
-      <h3>✨ Incredible India – Family Ramp Walk</h3>
-      <p>Families showcase the vibrant diversity of India through colorful attire and cultural pride. Each step on the ramp celebrates unity in diversity, reminding us of India’s rich heritage.</p>
-    </div>
-
-    <div class="activity">
-      <h3>🎭 Dashavataram</h3>
-      <p>A powerful dramatic performance portraying the ten incarnations of Lord Vishnu. Blending devotion, storytelling, and theatre, this play brings mythology to life with energy and grace.</p>
-    </div>
-
-    <div class="activity">
-      <h3>💃 Dancing</h3>
-      <p>Enjoy lively classical and modern Indian dance performances. From graceful steps to energetic beats, the dances will fill the stage with rhythm, color, and festive joy.</p>
-    </div>
-
-    <div class="activity">
-      <h3>🎤 Singing</h3>
-      <p>Our singers will perform soulful melodies and festive songs. From traditional bhajans to vibrant Bollywood numbers, the music will lift your mood and spread cheer.</p>
-    </div>
-
-    <div class="activity">
-      <h3>🎬 Drama</h3>
-      <p>Creative drama performances bring stories and emotions to life. With powerful acting and meaningful storytelling, these plays connect audiences to tradition and culture.</p>
+    <p><em>Happening on 8th November 2025, from 4:00 PM onwards</em></p>
+    <div class="grid">
+      <div class="activity">
+        <h3>✨ Incredible India – Family Ramp Walk</h3>
+        <p>Families showcase the vibrant diversity of India through colorful attire and cultural pride. Each step on the ramp celebrates unity in diversity, reminding us of India’s rich heritage.</p>
+      </div>
+      <div class="activity">
+        <h3>🎭 Dashavataram</h3>
+        <p>A powerful dramatic performance portraying the ten incarnations of Lord Vishnu. Blending devotion, storytelling, and theatre, this play brings mythology to life with energy and grace.</p>
+      </div>
+      <div class="activity">
+        <h3>💃 Dancing</h3>
+        <p>Enjoy lively classical and modern Indian dance performances. From graceful steps to energetic beats, the dances will fill the stage with rhythm, color, and festive joy.</p>
+      </div>
+      <div class="activity">
+        <h3>🎤 Singing</h3>
+        <p>Our singers will perform soulful melodies and festive songs. From traditional bhajans to vibrant Bollywood numbers, the music will lift your mood and spread cheer.</p>
+      </div>
+      <div class="activity">
+        <h3>🎬 Drama</h3>
+        <p>Creative drama performances bring stories and emotions to life. With powerful acting and meaningful storytelling, these plays connect audiences to tradition and culture.</p>
+      </div>
     </div>
 
     <h2>🎨 Pre-Event Activities</h2>
-
-    <div class="activity">
-      <h3>🪔 Diya Painting</h3>
-      <p>Paint beautiful clay lamps (diyas) that light up Diwali. Children and adults alike can express their creativity with colors and patterns to brighten the celebration.</p>
-    </div>
-
-    <div class="activity">
-      <h3>🖍️ Drawing</h3>
-      <p>Kids and participants bring their imagination to life through Diwali-themed drawing competitions. From rangolis to festive scenes, every sketch adds color to the event.</p>
-    </div>
-
-    <div class="activity">
-      <h3>🏮 Lantern Making</h3>
-      <p>Create glowing handmade lanterns in this fun and crafty activity. A perfect way to celebrate the Festival of Lights while adding your own creative touch to the décor.</p>
+    <p><em>All artwork must be submitted one week before the event day so it can be showcased on the 8th Nov 2025</em></p>
+    <div class="grid">
+      <div class="activity">
+        <h3>🪔 Diya Painting</h3>
+        <p>Paint beautiful clay lamps (diyas) that light up Diwali. Children and adults alike can express their creativity with colors and patterns to brighten the celebration.</p>
+      </div>
+      <div class="activity">
+        <h3>🖍️ Drawing</h3>
+        <p>Kids and participants bring their imagination to life through Diwali-themed drawing competitions. From rangolis to festive scenes, every sketch adds color to the event.</p>
+      </div>
+      <div class="activity">
+        <h3>🏮 Lantern Making</h3>
+        <p>Create glowing handmade lanterns in this fun and crafty activity. A perfect way to celebrate the Festival of Lights while adding your own creative touch to the décor.</p>
+      </div>
     </div>
   </main>
 
