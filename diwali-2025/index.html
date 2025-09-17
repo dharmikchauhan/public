@@ -4,158 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diwali Celebration</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #fff8e7, #ffe6cc);
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .top-banner {
-      background: #ff6600;
-      color: white;
-      text-align: center;
-      padding: 0.5rem;
-      font-size: 1rem;
-      word-wrap: break-word;
-    }
-    .top-banner a {
-      color: white;
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-weight: bold;
-    }
-    header {
-      background: linear-gradient(90deg, #ff9933, #ff6600);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-bottom: 5px solid #ffd700;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    main {
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    h2 {
-      color: #cc5500;
-      border-bottom: 3px solid #ffd966;
-      padding-bottom: 0.5rem;
-      margin: 1.5rem 0 1rem;
-      font-size: 1.5rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .activity {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-      padding: 1rem 1.5rem;
-      text-align: center;
-    }
-    h3 {
-      margin-top: 0;
-      color: #e65c00;
-      font-size: 1.2rem;
-    }
-    footer {
-      text-align: center;
-      background: linear-gradient(90deg, #ff6600, #cc3300);
-      color: white;
-      padding: 1rem;
-      margin-top: 1.5rem;
-      font-size: 1rem;
-    }
-
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      .grid {
-        grid-template-columns: 1fr;
-      }
-      .top-banner {
-        font-size: 0.9rem;
-      }
-      .activity {
-        padding: 1rem;
-      }
+      font-family: 'Inter', sans-serif;
+      background: #fdfaf5;
     }
   </style>
 </head>
-<body>
-  <div class="top-banner">
-    📞 Contact: 
-    <a href="tel:0420843188">Lavanya (0420843188)</a> |
-    <a href="tel:0480174996">Sirisha (0480174996)</a> |
-    <a href="tel:0488734641">Kalpana (0488734641)</a> |
-    <a href="tel:0414214977">Prasad (0414214977)</a>
+<body class="bg-amber-50">
+
+  <!-- Top Contact Banner -->
+  <div class="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-center py-2 px-4 rounded-b-xl shadow-lg">
+    <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm font-semibold">
+      <span class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.5l1 4a2 2 0 01-2 2h-.5a1 1 0 00-1 1v5a1 1 0 001 1h5a1 1 0 001-1v-.5a2 2 0 012-2l4 1V19a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        </svg>
+        Contact:
+      </span>
+      <a href="tel:0420843188" class="hover:underline transition-all">Lavanya (0420843188)</a>&nbsp;&nbsp;
+      <a href="tel:0480174996" class="hover:underline transition-all">Sirisha (0480174996)</a>&nbsp;&nbsp;
+      <a href="tel:0488734641" class="hover:underline transition-all">Kalpana (0488734641)</a>&nbsp;&nbsp;
+      <a href="tel:0414214977" class="hover:underline transition-all">Prasad (0414214977)</a>
+    </div>
   </div>
 
-  <header>
-    <h1>🌟 Diwali Celebration – Festival of Lights 🌟</h1>
-    <p>Join us for an evening of lights, culture, and creativity!</p>
-    📅 Event Date: 8th Nov 2025 4:00 PM onwards
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-orange-400 to-yellow-400 text-white text-center py-10 px-4 rounded-b-3xl shadow-2xl mt-4 mx-4 sm:mx-8 md:mx-12 lg:mx-20">
+    <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-2 leading-tight tracking-wide">
+      <span class="inline-block animate-pulse">🌟</span> Diwali Celebration – Festival of Lights <span class="inline-block animate-pulse">🌟</span>
+    </h1>
+    <p class="text-lg sm:text-xl font-medium opacity-90 mb-4">
+      Join us for an evening of lights, culture, and creativity!
+    </p>
+    <div id="calendar-link" class="flex items-center justify-center font-bold text-sm sm:text-lg bg-white/20 rounded-full px-4 py-1.5 backdrop-blur-sm whitespace-nowrap cursor-pointer transition-transform duration-300 hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h.01M16 11h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      Event Date: 8th Nov 2025 | 4:00 PM onwards
+    </div>
   </header>
 
-  <main>
-    <h2>🎭 Event Performances</h2>
-    <p><em>Entries need to be submitted before 5th October 2025</em></p>
-    <div class="grid">
-      <div class="activity">
-        <h3>✨ Incredible India – Family Ramp Walk</h3>
-        <p>Families showcase the vibrant diversity of India through colorful attire and cultural pride. Each step on the ramp celebrates unity in diversity, reminding us of India’s rich heritage.</p>
-      </div>
-      <div class="activity">
-        <h3>🎭 Dashavataram</h3>
-        <p>A powerful dramatic performance portraying the ten incarnations of Lord Vishnu. Blending devotion, storytelling, and theatre, this play brings mythology to life with energy and grace.</p>
-      </div>
-      <div class="activity">
-        <h3>💃 Dancing</h3>
-        <p>Enjoy lively classical and modern Indian dance performances. From graceful steps to energetic beats, the dances will fill the stage with rhythm, color, and festive joy.</p>
-      </div>
-      <div class="activity">
-        <h3>🎤 Singing</h3>
-        <p>Our singers will perform soulful melodies and festive songs. From traditional bhajans to vibrant Bollywood numbers, the music will lift your mood and spread cheer.</p>
-      </div>
-      <div class="activity">
-        <h3>🎬 Drama</h3>
-        <p>Creative drama performances bring stories and emotions to life. With powerful acting and meaningful storytelling, these plays connect audiences to tradition and culture.</p>
-      </div>
-    </div>
+  <main class="container mx-auto px-4 sm:px-8 py-12">
 
-    <h2>🎨 Pre-Event Activities</h2>
-    <p><em>All artwork must be submitted one week before the event day so it can be showcased on the 8th Nov 2025</em></p>
-    <div class="grid">
-      <div class="activity">
-        <h3>🪔 Diya Painting</h3>
-        <p>Paint beautiful clay lamps (diyas) that light up Diwali. Children and adults alike can express their creativity with colors and patterns to brighten the celebration.</p>
+    <!-- Event Performances Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-orange-600 mb-6">
+        🎭 Event Performances
+      </h2>
+      <p class="text-gray-600 text-lg mb-8 italic">
+        Entries need to be submitted before 5th October 2025
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Performance Card 1 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <div class="text-5xl mb-4">✨</div>
+          <h3 class="text-xl font-bold text-amber-600 mb-2">Incredible India – Family Ramp Walk</h3>
+          <p class="text-gray-700">
+            Families showcase the vibrant diversity of India through colorful attire and cultural pride. Each step on the ramp celebrates unity in diversity, reminding us of India’s rich heritage.
+          </p>
+        </div>
+        <!-- Performance Card 2 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <div class="text-5xl mb-4">🎭</div>
+          <h3 class="text-xl font-bold text-amber-600 mb-2">Dashavataram</h3>
+          <p class="text-gray-700">
+            A powerful dramatic performance portraying the ten incarnations of Lord Vishnu. Blending devotion, storytelling, and theatre, this play brings mythology to life with energy and grace.
+          </p>
+        </div>
+        <!-- Performance Card 3 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <div class="text-5xl mb-4">💃</div>
+          <h3 class="text-xl font-bold text-amber-600 mb-2">Dancing</h3>
+          <p class="text-gray-700">
+            Enjoy lively classical and modern Indian dance performances. From graceful steps to energetic beats, the dances will fill the stage with rhythm, color, and festive joy.
+          </p>
+        </div>
+        <!-- Performance Card 4 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <div class="text-5xl mb-4">🎤</div>
+          <h3 class="text-xl font-bold text-amber-600 mb-2">Singing</h3>
+          <p class="text-gray-700">
+            Our singers will perform soulful melodies and festive songs. From traditional bhajans to vibrant Bollywood numbers, the music will lift your mood and spread cheer.
+          </p>
+        </div>
+        <!-- Performance Card 5 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <div class="text-5xl mb-4">🎬</div>
+          <h3 class="text-xl font-bold text-amber-600 mb-2">Drama</h3>
+          <p class="text-gray-700">
+            Creative drama performances bring stories and emotions to life. With powerful acting and meaningful storytelling, these plays connect audiences to tradition and culture.
+          </p>
+        </div>
       </div>
-      <div class="activity">
-        <h3>🖍️ Drawing</h3>
-        <p>Kids and participants bring their imagination to life through Diwali-themed drawing competitions. From rangolis to festive scenes, every sketch adds color to the event.</p>
+    </section>
+
+    <!-- Pre-Event Activities Section -->
+    <section>
+      <h2 class="text-3xl sm:text-4xl font-bold text-orange-600 mb-6">
+        🎨 Pre-Event Activities
+      </h2>
+      <p class="text-gray-600 text-lg mb-8 italic">
+        All artwork must be submitted one week before the event day so it can be showcased on the 8th Nov 2025
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Activity Card 1 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <h3 class="text-xl font-bold text-amber-600 mb-2 flex items-center">
+            <span class="text-3xl mr-2">🪔</span> Diya Painting
+          </h3>
+          <p class="text-gray-700">
+            Paint beautiful clay lamps (diyas) that light up Diwali. Children and adults alike can express their creativity with colors and patterns to brighten the celebration.
+          </p>
+        </div>
+        <!-- Activity Card 2 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <h3 class="text-xl font-bold text-amber-600 mb-2 flex items-center">
+            <span class="text-3xl mr-2">🖍️</span> Drawing
+          </h3>
+          <p class="text-gray-700">
+            Kids and participants bring their imagination to life through Diwali-themed drawing competitions. From rangolis to festive scenes, every sketch adds color to the event.
+          </p>
+        </div>
+        <!-- Activity Card 3 -->
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 transition-transform transform hover:scale-105 duration-300">
+          <h3 class="text-xl font-bold text-amber-600 mb-2 flex items-center">
+            <span class="text-3xl mr-2">🏮</span> Lantern Making
+          </h3>
+          <p class="text-gray-700">
+            Create glowing handmade lanterns in this fun and crafty activity. A perfect way to celebrate the Festival of Lights while adding your own creative touch to the décor.
+          </p>
+        </div>
       </div>
-      <div class="activity">
-        <h3>🏮 Lantern Making</h3>
-        <p>Create glowing handmade lanterns in this fun and crafty activity. A perfect way to celebrate the Festival of Lights while adding your own creative touch to the décor.</p>
-      </div>
-    </div>
+    </section>
   </main>
 
-  <footer>
-    <p>✨ Celebrate Diwali with us – Lights, Culture, and Joy! ✨</p>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-6 mt-12 px-4 rounded-t-xl">
+    <p class="text-lg font-semibold">✨ Celebrate Diwali with us – Lights, Culture, and Joy! ✨</p>
   </footer>
+
+  <script>
+    document.getElementById('calendar-link').addEventListener('click', function() {
+      // Define the event details
+      const event = {
+        title: 'Diwali Celebration – Festival of Lights',
+        description: 'Join us for an evening of lights, culture, and creativity! The event features family ramp walks, dance, singing, drama, and pre-event activities like diya painting, drawing, and lantern making.',
+        start: '2025-11-08T16:00:00',
+        end: '2025-11-08T22:00:00', // Assuming the event runs for a few hours
+      };
+
+      // Create the iCalendar data
+      const icsData = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Gemini//EN',
+        'BEGIN:VEVENT',
+        `UID:${Math.random().toString(36).substring(2) + Date.now()}`,
+        `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+        `DTSTART:${event.start.replace(/-/g, '').replace(/:/g, '')}`,
+        `DTEND:${event.end.replace(/-/g, '').replace(/:/g, '')}`,
+        `SUMMARY:${event.title}`,
+        `DESCRIPTION:${event.description}`,
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\n');
+
+      // Create a Blob and URL for the ICS file
+      const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+
+      // Create a temporary link and trigger the download
+      const tempLink = document.createElement('a');
+      tempLink.href = url;
+      tempLink.setAttribute('download', 'diwali_celebration.ics');
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+      URL.revokeObjectURL(url);
+    });
+  </script>
+
 </body>
 </html>
